@@ -1,0 +1,92 @@
+.home{
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    align-items: center;
+    text-align: center;
+}
+
+.container-fluid{
+    height: 100vh;
+}
+
+.home-name{
+    margin-top: 120px;
+    font-size: 38px;
+    line-height: 50px;
+    letter-spacing: 0.08em;
+    color: var(--white);
+}
+
+.home-job{
+    color: var(--white);
+    font-size: 34px;
+    line-height: 70px;
+    letter-spacing: 0.08em;
+    margin-bottom: 40px;
+}
+
+.home-img{
+    height: 40vh;
+    display: block;
+    bottom: 0;
+    z-index: 0;
+}
+
+.highlight{
+    color: var(--green);
+    display: block;
+}
+
+.home-button{
+    border: 2px solid var(--green);
+    background: var(--green);
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 20px;
+}
+
+.home-button:hover{
+    border: 2px solid var(--white);
+    box-shadow: 1px 1px 5px 1px var(--white);
+}
+
+.circle-first{
+    position: absolute;
+    z-index: -1;
+    width: 300px;
+    height: 300px;
+    background: var(--black);
+    border-radius: 100%;
+    top: -40px;
+    left: -100px;
+}
+.circle-second{
+    position: absolute;
+    z-index: -1;
+    width: 240px;
+    height: 240px;
+    border: 4px solid var(--green);
+    border-radius: 100%;
+    bottom: -10px;
+    left: -80px;
+}
+
+.circle-third{
+    position: absolute;
+    z-index: -1;
+    width: 240px;
+    height: 240px;
+    background-color: var(--green);
+    border-radius: 100%;
+    right: -100px;
+    top: 400px;
+    opacity: 0.4;
+}
+
+@media (min-width: 768px) {
+    
+}
