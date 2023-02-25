@@ -1,7 +1,6 @@
 .home{
     height: 100vh;
-    display: flex;
-    justify-content: flex-start;
+    display: flex;  
     align-items: center;
     position: relative;
     overflow: hidden;
@@ -30,6 +29,7 @@
 }
 
 .home-img{
+    position: absolute;
     height: 40vh;
     display: block;
     bottom: 0;
@@ -88,5 +88,4 @@
 }
 
 @media (min-width: 768px) {
-    
 }
