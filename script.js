@@ -19,10 +19,10 @@ function reveal(){
 
     for(var i=0; i < reveals.length; i++){
         var windowheight = window.innerHeight;
-        var revealtop = reveals[i].getBoundingClientRect().top;
+        var revealleft = reveals[i].getBoundingClientRect().top;
         var revealpoint = 150;
 
-        if(revealtop < windowheight - revealpoint){
+        if(revealleft < windowheight - revealpoint){
             reveals[i].classList.add("operativ")
         }
 

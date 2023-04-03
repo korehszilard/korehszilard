@@ -33,13 +33,13 @@ body{
 
 .reveal{
     position: relative;
-    transform: translateY(150px);
+    transform: translateX(150px);
     opacity: 0;
     transition: all 2s ease;
 }
 
 .reveal.operativ{
-    transform: translateY(0);
+    transform: translateX(0);
     opacity: 1;
 }
 
