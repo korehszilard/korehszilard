@@ -1,5 +1,4 @@
     header {
-        background: var(--green);
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -8,12 +7,11 @@
         padding: 2%;
         height: 80px;
         z-index: 10;
-        box-shadow: 4px 8px 40px var(--darkblue);
     }
 
     .header-logo {
         font-family: var(--logoFont);
-        color: var(--black);
+        color: var(--white);
         font-weight: 500;
         font-size: 20px;
         line-height: 43px;
@@ -26,19 +24,23 @@
         height: 100%;
         right: -100%;
         max-width: 200px;
-        background: var(--green);
         transition: all 0.3s ease;
         padding: 0 20px;
     }
 
+    .sticky{
+        background-color: var(--blue);
+    }
+
     .nav-list.show {
         right: 0;
+        background-color: var(--blue);
     }
 
     .nav-list__element a {
         font-size: 20px;
         line-height: 80px;
-        color: var(--black);
+        color: var(--white);
         font-weight: 400;
     }
 
@@ -67,7 +69,7 @@
         margin: 5px auto;
         -webkit-transition: all 0.3s ease;
         transition: all 0.3s ease;
-        background: var(--black);
+        background: var(--white);
     }
     @media (min-width: 768px) {    
     

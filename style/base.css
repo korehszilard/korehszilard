@@ -1,7 +1,7 @@
 :root {
-    --darkblue: #0d2233 ;
-    --green: #42ab8a ;
-    --white: #ffffff ;
+    --blue: #091970;
+    --light: #0968e5 ;
+    --white: #f6f6f6 ;
     --black: #000000 ;
     --mainFont: 'Poppins', sans-serif;
     --logoFont: 'Gloria Hallelujah', cursive;
@@ -26,7 +26,6 @@ html {
 }
 
 body{
-    background: var(--darkblue);
     font-family: var(--mainFont);
     color: var(--black);
 }

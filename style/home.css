@@ -1,4 +1,5 @@
 .home{
+    background: linear-gradient(180deg, var(--blue) 10%,var(--light),var(--white));
     height: 100vh;
     display: flex;  
     align-items: center;
@@ -12,8 +13,13 @@
     height: 100vh;
 }
 
+.text{
+    position: absolute;
+    left: 10;
+}
+
 .home-name{
-    margin-top: 120px;
+    margin-top: 100px;
     font-size: 38px;
     line-height: 50px;
     letter-spacing: 0.08em;
@@ -32,59 +38,28 @@
     position: absolute;
     height: 50vh;
     display: block;
-    bottom: 0;
+    bottom: 2px;
+    margin: 0 auto;
     z-index: 0;
 }
 
 .highlight{
-    color: var(--green);
+    color: var(--white);
     display: block;
 }
 
 .home-button{
-    border: 2px solid var(--green);
-    background: var(--green);
+    border: 2px solid var(--black);
+    background: var(--black);
     cursor: pointer;
     padding: 10px 20px;
     font-size: 20px;
+    color: var(--white);
 }
 
 .home-button:hover{
     border: 2px solid var(--white);
     box-shadow: 1px 1px 5px 1px var(--white);
-}
-
-.circle-first{
-    position: absolute;
-    z-index: -1;
-    width: 300px;
-    height: 300px;
-    background: var(--black);
-    border-radius: 100%;
-    top: -40px;
-    left: -100px;
-}
-.circle-second{
-    position: absolute;
-    z-index: -1;
-    width: 240px;
-    height: 240px;
-    border: 4px solid var(--green);
-    border-radius: 100%;
-    bottom: -10px;
-    left: -80px;
-}
-
-.circle-third{
-    position: absolute;
-    z-index: -1;
-    width: 240px;
-    height: 240px;
-    background-color: var(--green);
-    border-radius: 100%;
-    right: -100px;
-    top: 400px;
-    opacity: 0.4;
 }
 
 @media (min-width: 768px) {
@@ -94,7 +69,7 @@
 
     .text{
         width: 50vw;
-        margin: 100px 0 0 60px;
+        margin: 60px 0;
     }
 
     .home-name{
@@ -115,27 +90,13 @@
     .home-img{
         height: 60vh;
         width: 60vw;
-        right: -40px;
-    }
-
-    .circle-first{
-        top: -40px;
-        left: -80px;
-    }
-    .circle-second{
-        bottom: -10px;
-        left: -60px;
-    }
-    
-    .circle-third{
-        right: -80px;
-        top: 60px;
+        right: 10px;
     }
 }
 
 @media (min-width: 992px){
     .text{
-        margin: 140px 0 0 120px;
+        margin: 60px 0;
     }
 
     .home-name{
@@ -155,27 +116,12 @@
         height: 80vh;
         width: 60vw;
         max-width: 600px;
-        right: -40px;
-    }
-
-    .circle-first{
-        width: 300px;
-        height: 300px;
-    }
-    .circle-second{
-        width: 300px;
-        height: 300px;
-    }
-    
-    .circle-third{
-        width: 300px;
-        height: 300px;
+        right: 10px;
     }
 }
-
 @media (min-width: 1200px){
     .text{
-        margin: 60px 0 0 180px;
+        margin: 60px 0;
     }
 
     .home-name{
@@ -197,23 +143,20 @@
         height: 80vh;
         width: 60vw;
         max-width: 620px;
-        right: -40px;
+        right: 10px;
     }
 }
 
-@media (min-width: 1400px){
+@media (min-width: 1400px){ 
+    
     .text{
-        margin: 80px 0 0 180px;
+        margin: 80px 0;
     }
 
     .home-img{
-        height: 90vh;
-        width: 60vw;
-        max-width: 680px;
+        height: 80vh;
+        width: 50vw;
+        max-width: 800px;
+        bottom: 40px;
     }
-
-    .circle-second{
-        bottom: -80px;
-    }
-
 }

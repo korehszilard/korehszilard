@@ -31,3 +31,11 @@ function reveal(){
         }
     } 
 }
+
+window.addEventListener("scroll", header)
+
+function header(){
+    var header= document.querySelector("header")
+
+    header.classList.toggle("sticky", window.scrollY > 0)
+}

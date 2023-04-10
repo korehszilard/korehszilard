@@ -1,16 +1,16 @@
 .about{
-    background-color:var(--white);
+    background: var(--white);
     position: relative;
     overflow: hidden;
     z-index: 0;
 }
 
-.about-title{
-    position: absolute;
-    left: 160px;
+.title{
+    text-align: center;
+    padding: 0;
     font-size: 3rem;
     font-weight: 600;
-    color: var(--darkblue);
+    color: var(--black);
     margin-top: 4px;
 }
 
@@ -18,7 +18,7 @@
     position: absolute;
     width: 180px;
     height: 180px;
-    top: 90px;
+    top: 15px;
     right: 0;
 }
 
@@ -27,11 +27,11 @@
 }
 
 .content{
-    top: 116px;
+    top: 40px;
     position: relative;
     height: 154px;
     float: left;
-    background: rgba(66, 171, 138, 0.4);
+    background: linear-gradient(100deg, var(--blue) , var(--light) 50%, var(--white));
 }
 
 .content-hy{
@@ -39,7 +39,7 @@
     font-size: 18px;
     font-weight: 600;
     line-height: 30px;
-    color: var(--darkblue);
+    color: var(--black);
 }
 .content-name{ 
     
@@ -47,7 +47,7 @@
     font-size: 20px;
     font-weight: 800;
     line-height: 40px;
-    color: var(--green);
+    color: var(--black);
 }
 .content-job{
     position: absolute;
@@ -56,13 +56,13 @@
     font-size: 18px;
     font-weight: 600;
     line-height: 30px;
-    color: var(--darkblue);
+    color: var(--black);
 }
 .content-text{
     position: relative;
-    margin: 0 auto;
     text-align: center;
-    top: 160px;
+    margin: 60px auto;
+    padding: 10px;
     font-size: 16px;
     font-weight: 500;
     line-height: 24px;
@@ -72,7 +72,7 @@
 .content-button{
     margin-top: 28px;
     color: var(--white);
-    background: var(--darkblue);
+    background: var(--black);
     padding: 0.6rem 1.6rem;
     font-size: 1rem;
     font-weight: 600;
