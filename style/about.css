@@ -3,7 +3,7 @@
     position: relative;
     overflow: hidden;
     z-index: 0;
-    max-height: 800px;
+    height: 800px;
 }
 
 .title{
@@ -71,11 +71,12 @@
 }
 
 .content-button{
-    margin-top: 28px;
+
+    padding: 14px 30px;
+    font-size: 18px;
+    margin: 28px auto;
     color: var(--white);
     background: var(--black);
-    padding: 0.6rem 1.6rem;
-    font-size: 1rem;
     font-weight: 600;
     cursor: pointer;
 }
@@ -85,10 +86,172 @@
     box-shadow: 2px 2px 5px 1px var(--black);
 }
 
-@media (min-width: 768px){}
+@media (min-width: 768px){
 
-@media (min-width: 992px){}
+.avatar{
 
-@media (min-width: 1200px){}
+        width: 200px;
+        height: 200px;
+        right: 60px;
+}
 
-@media (min-width: 1400px){}
+.content{
+
+        height: 174px;   
+}
+
+.content-hy{
+
+    margin: 30px 0 0 40px;
+    font-size: 24px;
+    line-height: 30px;
+}
+.content-name{ 
+    
+    margin: 0 40px;
+    font-size: 26px;
+    line-height: 60px;
+}
+.content-job{
+
+    margin-left: 40px;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.content-text{
+
+    margin: 100px auto;
+    padding: 10px;
+    font-size: 18px;
+    line-height: 30px;
+    width: 600px;
+}
+
+.content-button{
+
+    margin-top: 40px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+}
+
+@media (min-width: 992px){
+    
+.avatar{
+
+    top: 6px;
+    width: 240px;
+    height: 240px;
+    right: 80px;
+}
+
+.content{
+
+    height: 206px;   
+}
+
+.content-hy{
+
+margin: 40px 0 0 60px;
+font-size: 28px;
+line-height: 30px;
+}
+.content-name{ 
+
+margin: 0 60px;
+font-size: 30px;
+line-height: 70px;
+}
+.content-job{
+
+margin-left: 60px;
+font-size: 28px;
+line-height: 30px;
+}
+
+.content-text{
+
+margin: 120px auto;
+padding: 10px;
+font-size: 18px;
+line-height: 30px;
+width: 700px;
+}
+
+.content-button{
+
+margin-top: 40px;
+font-size: 20px;
+font-weight: 600;
+cursor: pointer;
+}
+}
+
+@media (min-width: 1200px){ 
+    
+    .content-text{
+        font-size: 20px;
+        width: 800px;
+        }
+}
+
+@media (min-width: 1400px){
+
+    .about{
+        height: 1000px;
+    }
+
+    .avatar{
+
+        top: 6px;
+        width: 300px;
+        height: 300px;
+        right: 200px;
+    }
+    
+    .content{
+        top: 42px;
+        height: 266px;   
+    }
+    
+    .content-hy{
+    
+        margin: 50px 0 0 60px;
+        font-size: 38px;
+        line-height: 30px;
+    }
+    .content-name{ 
+    
+        margin: 0 60px;
+        font-size: 40px;
+        line-height: 100px;
+    }
+    .content-job{
+    
+    margin-left: 60px;
+    font-size: 38px;
+    line-height: 30px;
+    }
+    
+    .content-text{
+    
+    margin: 120px auto;
+    padding: 10px;
+    font-size: 28px;
+    line-height: 48px;
+    width: 1600px;
+    }
+    
+    .content-button{
+    
+    margin-top: 40px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    }
+
+
+}

@@ -6,7 +6,7 @@
     overflow: hidden;
     align-items: center;
     text-align: center;
-    max-height: 800px;
+    height: 800px;
 }
 
 .home-name{
@@ -88,6 +88,7 @@
         padding: 10px 30px;
     }
 }
+
 @media (min-width: 1200px){
     .text{
         margin-top: 100px;
@@ -111,15 +112,32 @@
 
 @media (min-width: 1400px){ 
 
+    .home{
+        height: 1000px;
+    }
+
+    .text{
+        margin-top: 80px;
+    }
+
     .home-name{
-        font-size: 62px;
+        font-size: 80px;
+        line-height: 80px;
+        letter-spacing: 0.12em;
     }
 
     .home-job{
-        font-size: 60px;
+        font-size: 70px;
+        margin-bottom: 80px;
+        letter-spacing: 0.12em;
     }
 
     .highlight{
-        line-height: 140px;
+        line-height: 180px;
+        letter-spacing: 0.12em;
+    }
+
+    .home-img{
+        margin-top: 80px;
     }
 }

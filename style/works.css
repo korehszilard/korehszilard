@@ -3,7 +3,7 @@
     position: relative;
     overflow: hidden;
     z-index: 0;
-    max-height: 800px;
+    max-height: 1200px;
 }
 
 .cards{
@@ -11,7 +11,7 @@
 }
 
 .works-project{
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 .project-img{

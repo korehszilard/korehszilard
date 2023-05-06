@@ -36,3 +36,7 @@
 .contact-logo{
     color: var(--white);
 }
+
+.send{
+    font-size: 20px;
+}
