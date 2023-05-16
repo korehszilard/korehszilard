@@ -1,0 +1,88 @@
+.myskills{
+    background: var(--white);
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    height: 1000px;
+}
+
+.skill{
+    text-align: center;
+    margin-top: 80px;
+}
+
+.circle-chart {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .circle-chart__circle {
+    stroke: var(--blue);
+    stroke-width: 2;
+    stroke-linecap: square;
+    fill: none;
+    animation: circle-chart-fill 2s reverse;
+    transform: rotate(-90deg);
+    transform-origin: center;
+  }
+  
+  .circle-chart__circle--negative {
+    transform: rotate(-90deg) scale(1,-1);
+  }
+  
+  .circle-chart__background {
+    stroke: #c4c0c0;
+    stroke-width: 2;
+    fill: none; 
+  }
+  
+  .circle-chart__info {
+    animation: circle-chart-appear 2s forwards;
+    opacity: 0;
+    transform: translateY(0.3em);
+  }
+  
+  .circle-chart__percent {
+    alignment-baseline: central;
+    text-anchor: middle;
+    font-size: 8px;
+  }
+  
+  .circle-chart__subline {
+      alignment-baseline: central;
+      text-anchor: middle;
+      font-size: 3px;
+  }
+  
+  @keyframes circle-chart-fill {
+    to { stroke-dasharray: 0 100; }
+  }
+  
+  @keyframes circle-chart-appear {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @media (min-width: 768px){
+    .skill{
+        margin-top: 60px;
+    }
+
+    .circle-chart {
+        width: 140px;
+        height: 140px;
+      }
+  }
+  
+  @media (min-width: 992px){
+    .skill{
+        margin-top: 80px;
+    }
+
+    .circle-chart {
+        width: 180px;
+        height: 180px;
+      }
+  }

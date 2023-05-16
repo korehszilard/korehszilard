@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./style/header.css">
     <link rel="stylesheet" href="./style/home.css">
     <link rel="stylesheet" href="./style/about.css">
+    <link rel="stylesheet" href="./style/myskills.css">
     <link rel="stylesheet" href="./style/works.css">
     <link rel="stylesheet" href="./style/contact.css">
     <link rel="stylesheet" href="./style/footer.css">
@@ -31,6 +32,7 @@
         <ul class="nav-list">
             <li class="nav-list__element"><a href="#home"> <i class="fa fa-home icon-fa"></i>Főoldal</a></li>
             <li class="nav-list__element"><a href="#about"><i class="fa fa-user icon-fa"></i>Rólam</a></li>
+            <li class="nav-list__element"><a href="#myskills"><i class="fa fa-star icon-fa"></i>Képességek</a></li>
             <li class="nav-list__element"><a href="#works"><i class="fa fa-briefcase icon-fa"></i>Munkáim</a></li>
             <li class="nav-list__element"><a href="#contact"><i class="fa fa-envelope icon-fa"></i>Kapcsolat</a></li>
         </ul>
@@ -68,10 +70,65 @@
                 </div>
                 </div>
                     <div class="content-text">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at ex augue. Nullam a lobortis arcu. Integer magna ante, ultricies id purus a, tristique sollicitudin sem. Proin lacus odio, malesuada sit amet egestas at, malesuada nec sapien. Ut pretium, dui eget commodo aliquam, felis nunc placerat nulla, sed lacinia est neque in arcu. Nam consequat magna tincidunt ex fringilla laoreet.</p>
+                    <p>20 éves vagyok. Már az iskolában megtetszett mikor Html-ről kezdtünk tanulni, aztán itthon hobbiként videók alapján elkezdtem jobban beleásni magam a témában. Végül 2022-ben úgy döntöttem, hogy szeretnék komolyabban neki állni ennek az egésznek és beiratkozom egy képzésre. Sok böngészés után a RUANDER Oktatóközpont 10 hónapos Junior Frontend Fejlesztő tanfolyama keltette fel az érdeklődésem, a jelentkezésem le is adtam a leghamarabb induló tanfolyamra. Áprilisban sikerült át is vennem a bizonyítványom, és most szerenék elhelyezkedni, hogy tudásomat még tovább fejlesszem.</p>
                     <button class="content-button">Önéletrajz</button>
                     </div>
             </div>
+        </section>
+
+        <section id="myskills" class="myskills">
+            <h2 class="title">Képességek</h2>
+            <div class="container-fluid">
+                
+                <div class="row">
+
+                    <div class="skill col-4 col-lg-3">
+                        <div class="circlechart" data-percentage="94">HTML</div>
+                    </div>
+
+                    <div class="skill col-4 col-lg-3">
+                        <div class="circlechart" data-percentage="94">CSS</div>
+                    </div>
+
+                    <div class="skill col-4 col-lg-3">
+                        <div class="circlechart" data-percentage="90">Bootstrap</div>
+                    </div>
+
+                    <div class="skill col-4 col-lg-3">
+                        <div class="circlechart" data-percentage="80">Javascript</div>
+                    </div>
+
+                    <div class="skill col-4 col-lg-3">
+                        <div class="circlechart" data-percentage="70">Angular</div>
+                    </div>
+
+                    <div class="skill col-4 col-lg-3">
+                        <div class="circlechart" data-percentage="68">Git</div>
+                    </div>
+
+                    <div class="skill col-4 col-lg-3">
+                        <div class="circlechart" data-percentage="62">NodeJs</div>
+                    </div>
+
+                    <div class="skill col-4 col-lg-3">
+                        <div class="circlechart" data-percentage="50">jQuery</div>
+                    </div>
+
+                    <div class="skill col-4 col-lg-3">
+                        <div class="circlechart" data-percentage="40">Unit</div>
+                    </div>
+
+                    <div class="skill col-4 col-lg-3">
+                        <div class="circlechart" data-percentage="36">NatívJavascript</div>
+                    </div>
+
+                    <div class="skill col-4 col-lg-3">
+                        <div class="circlechart" data-percentage="24">Figma</div>
+                    </div>
+
+                    <div class="skill col-4 col-lg-3">
+                        <div class="circlechart" data-percentage="18">OAuth</div>
+                    </div>
         </section>
 
         <section id="works" class="works">
@@ -157,6 +214,8 @@
 <script src="https://kit.fontawesome.com/c63f3b96e0.js" crossorigin="anonymous"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="progresscircle.js"></script>
 <script src="script.js"></script>
 <script type="text/javascript">
     (function(){

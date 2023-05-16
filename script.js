@@ -57,7 +57,7 @@ emailjs
     document.getElementById("email").value = "";
     document.getElementById("message").value = "";
     console.log(res);
-    alert("Köszönöm, hogy megkerestél igyekszem gyorsan válaszolni");
+    alert("Köszönöm, hogy megkerestél igyekszem gyorsan válaszolni.");
 })
 .catch((err) => console.log(err));
 }

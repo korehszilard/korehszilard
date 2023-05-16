@@ -3,7 +3,7 @@
     position: relative;
     overflow: hidden;
     z-index: 0;
-    height: 800px;
+    height: 1000px;
 }
 
 .title{
@@ -63,11 +63,11 @@
     position: relative;
     text-align: center;
     margin: 80px auto;
-    padding: 10px;
+    padding: 4px;
     font-size: 16px;
     font-weight: 500;
     line-height: 24px;
-    width: 340px;
+    width: 320px;
 }
 
 .content-button{
@@ -176,7 +176,7 @@ line-height: 30px;
 
 margin: 120px auto;
 padding: 10px;
-font-size: 18px;
+font-size: 20px;
 line-height: 30px;
 width: 700px;
 }
@@ -194,15 +194,11 @@ cursor: pointer;
     
     .content-text{
         font-size: 20px;
-        width: 800px;
+        width: 700px;
         }
 }
 
 @media (min-width: 1400px){
-
-    .about{
-        height: 1000px;
-    }
 
     .avatar{
 
@@ -240,9 +236,9 @@ cursor: pointer;
     
     margin: 120px auto;
     padding: 10px;
-    font-size: 28px;
+    font-size: 24px;
     line-height: 48px;
-    width: 1600px;
+    width: 1400px;
     }
     
     .content-button{
