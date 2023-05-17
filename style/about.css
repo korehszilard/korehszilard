@@ -70,20 +70,8 @@
     width: 320px;
 }
 
-.content-button{
-
-    padding: 14px 30px;
-    font-size: 18px;
-    margin: 28px auto;
-    color: var(--white);
-    background: var(--black);
-    font-weight: 600;
-    cursor: pointer;
-}
-
-.content-button:hover{
-    border: 2px solid var(--black);
-    box-shadow: 2px 2px 5px 1px var(--black);
+.content-text p{
+    margin-bottom: 80px;
 }
 
 @media (min-width: 768px){
@@ -126,14 +114,6 @@
     font-size: 18px;
     line-height: 30px;
     width: 600px;
-}
-
-.content-button{
-
-    margin-top: 40px;
-    font-size: 20px;
-    font-weight: 600;
-    cursor: pointer;
 }
 
 }
@@ -180,21 +160,13 @@ font-size: 20px;
 line-height: 30px;
 width: 700px;
 }
-
-.content-button{
-
-margin-top: 40px;
-font-size: 20px;
-font-weight: 600;
-cursor: pointer;
-}
 }
 
 @media (min-width: 1200px){ 
     
     .content-text{
-        font-size: 20px;
-        width: 700px;
+        font-size: 28px;
+        width: 1000px;
         }
 }
 
@@ -240,14 +212,4 @@ cursor: pointer;
     line-height: 48px;
     width: 1400px;
     }
-    
-    .content-button{
-    
-    margin-top: 40px;
-    font-size: 20px;
-    font-weight: 600;
-    cursor: pointer;
-    }
-
-
 }
