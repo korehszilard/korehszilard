@@ -46,7 +46,7 @@ function sendMail() {
     var message = document.getElementById("message").value;
   
     if (name === "" || email === "" || message === "") {
-      alert("Az input mezők kitöltése kötelező!");
+      alert("A mezők kitöltése kötelező!");
     } else {
       var params = {
         from_name: name,
