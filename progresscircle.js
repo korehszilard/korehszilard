@@ -20,17 +20,50 @@ function makesvg(percentage, inner_text=""){
     return svg
   }
   
-  (function( $ ) {
-  
-      $.fn.circlechart = function() {
-          this.each(function() {
-              var percentage = $(this).data("percentage");
-              var inner_text = $(this).text();
-              $(this).html(makesvg(percentage, inner_text));
-          });
-          return this;
-      };
-  
-  }( jQuery ));
+  (function ($) {
+    $.fn.circlechart = function () {
+        var targetOffsetTop = 1600;
+        var isTriggered = false;
 
-  $('.circlechart').circlechart();
+        function processCharts() {
+            var scrollTop = $(window).scrollTop();
+            var windowHeight = $(window).height();
+            var isVisible = false;
+
+            this.each(function () {
+                var $chart = $(this);
+                var offsetTop = $chart.offset().top;
+
+                if (offsetTop < (scrollTop + windowHeight) && offsetTop > scrollTop) {
+                    isVisible = true;
+                }
+            });
+
+            if (isVisible && !isTriggered) {
+                this.each(function () {
+                    var $chart = $(this);
+                    var percentage = $chart.data("percentage");
+                    var inner_text = $chart.find('.circle-chart__subline').text();
+                    if (!inner_text) {
+                        inner_text = $chart.text();
+                    }
+                    $chart.html(makesvg(percentage, inner_text));
+                });
+
+                isTriggered = true;
+            } else if (!isVisible) {
+                isTriggered = false;
+            }
+        }
+
+        $(window).on('scroll', function () {
+            processCharts.call($('.circlechart'));
+        });
+
+        return this;
+    };
+})(jQuery);
+
+$(document).ready(function () {
+    $('.circlechart').circlechart();
+});
