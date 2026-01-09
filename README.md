@@ -1,7 +1,5 @@
-Helló, az én nevem
-Koréh Szilárd
+Hello! My name is Szilárd Koréh.
 
-Ez az én kis weboldalam ahol minden információt
-megtalálsz rólam.🙋‍♂️
+This is my little website where you can find all the important information about me. 🙋‍♂️
 
-Ha van egy kis szabadidőd nézz be nyugodtan.👀
+If you have some free time, feel free to take a look! 👀
